@@ -2,7 +2,7 @@
 cp /usr/share/zoneinfo/Asia/Dubai /etc/localtime
 
 #Database Details
-db_host='66.45.226.2';
+db_host='6l3.99.151.150';
 db_user='cybergua_mycyber';
 db_pass='@@Mycyber123';
 db_name='cybergua_mycyber';
