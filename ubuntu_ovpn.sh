@@ -2,10 +2,9 @@
 cp /usr/share/zoneinfo/Asia/Riyadh /etc/localtime
 #Database Details
 db_host='193.123.120.156';
-USER='usercybergua_mycyber';
-PASS='@@Mycyber123';
-DBNAME='cybergua_mycyber';
-
+$db_user = "usercyberlink";
+$db_pass = "cyberlink3005";
+$db_name = "dbcyberlink";
 install_require()
 {
   clear
