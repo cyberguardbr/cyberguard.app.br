@@ -3,9 +3,9 @@ cp /usr/share/zoneinfo/Asia/Dubai /etc/localtime
 
 #Database Details
 db_host='193.123.120.156';
-db_user='usercybergua_mycyber';
-db_pass='@@Mycyber123';
-db_name='cybergua_mycyber';
+$db_user = "usercyberlink";
+$db_pass = "cyberlink3005";
+$db_name = "dbcyberlink";
 
 install_require()
 {
