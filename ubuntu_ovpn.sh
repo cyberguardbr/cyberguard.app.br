@@ -1,8 +1,8 @@
 #!/bin/bash
 cp /usr/share/zoneinfo/Asia/Riyadh /etc/localtime
 #Database Details
-db_host='3.99.151.150';
-USER='cybergua_mycyber';
+db_host='193.123.120.156';
+USER='usercybergua_mycyber';
 PASS='@@Mycyber123';
 DBNAME='cybergua_mycyber';
 
