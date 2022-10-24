@@ -1,9 +1,9 @@
 #!/bin/bash
 cp /usr/share/zoneinfo/Asia/Riyadh /etc/localtime
 #Database Details
-db_host='204.236.192.118';
+db_host='193.123.124.209';
 $db_user = "cyberlink";
-$db_pass = "@@Cyberlink3005!";
+$db_pass = "Cyberlink3005";
 $db_name = "cyberlink";
 install_require()
 {
