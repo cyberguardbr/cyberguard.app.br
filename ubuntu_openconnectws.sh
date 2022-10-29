@@ -2,7 +2,7 @@
 cp /usr/share/zoneinfo/Asia/Dubai /etc/localtime
 
 #Database Details
-$db_host='193.123.118.199';
+$db_host='35.182.254.111';
 $db_user = "cyberlink";
 $db_pass = "Cyberlink3005!";
 $db_name = "cyberlink";
