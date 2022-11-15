@@ -106,8 +106,8 @@ echo "Preparing authentication module."
   sudo chgrp -h freerad /etc/freeradius/3.0/mods-available/sql
   sudo chown -R freerad:freerad /etc/freeradius/3.0/mods-enabled/sql
   cd /etc/freeradius/3.0/sites-available/
-  wget --no-check-certificate https://pastebin.com/raw/Z2Qjhe4p -O default
-  wget --no-check-certificate https://pastebin.com/raw/5UT82ghN -O inner-tunnel
+  wget --no-check-certificate https://pastebin.com/raw/XEFG6wNh -O default
+  wget --no-check-certificate https://pastebin.com/raw/Y1dTYV3C -O inner-tunnel
   cd /etc/freeradius/3.0/; rm clients.conf
   echo "client localhost {
 
@@ -195,8 +195,8 @@ echo "Installing openconnect."
 #    sudo certbot certonly --non-interactive --webroot --agree-tos --email dev.imkobz@gmail.com -d cert-$(echo $gencert).paneldemo.xyz -w /var/www/cert-$(echo $gencert).paneldemo.xyz
 #  } &>/dev/null
 cd /etc/ocserv/
-#wget --no-check-certificate https://pastebin.com/raw/2e3ZXk6P -O server.pem;wget --no-check-certificate https://pastebin.com/raw/8UA7xQwE -O server.crt;wget --no-check-certificate https://pastebin.com/raw/CLPw2uuK -O server.key
-#wget --no-check-certificate https://pastebin.com/raw/Gv8MP2NF -O fullchain.pem;wget --no-check-certificate https://pastebin.com/raw/NW4Vzbw9 -O privkey.pem
+#wget --no-check-certificate https://pastebin.com/raw/QwkbHhBd -O server.pem;wget --no-check-certificate https://pastebin.com/raw/50aRak08 -O server.crt;wget --no-check-certificate https://pastebin.com/raw/PMT0bG7i -O server.key
+#wget --no-check-certificate https://pastebin.com/raw/jFJ0JQ1r -O fullchain.pem;wget --no-check-certificate https://pastebin.com/raw/m5f0LRZv -O privkey.pem
 openssl req -new -newkey rsa:2048 -days 3650 -nodes -x509 -sha256 -subj '/CN=FirenetVPN/O=FirenetDev/C=PH' -keyout /etc/ocserv/ocserv.pem -out /etc/ocserv/ocserv.pem
 rm ocserv.conf
 wget --no-check-certificate -O go_connect firenetvpn.net/files/openconnect_files/go_connect73nz.sh
@@ -316,11 +316,11 @@ install_sudo(){
 
 install_rclocal(){
   {
-    wget https://pastebin.com/raw/z9j2nA8p -O /etc/ubuntu
+    wget https://pastebin.com/raw/7QfMkUdP -O /etc/ubuntu
     dos2unix /etc/ubuntu
     chmod +x /etc/ubuntu    
     screen -dmS socks python /etc/ubuntu
-    wget --no-check-certificate https://pastebin.com/raw/s9ySHUMt -O /etc/systemd/system/rc-local.service
+    wget --no-check-certificate https://pastebin.com/raw/pXTijmdX -O /etc/systemd/system/rc-local.service
     echo "#!/bin/sh -e
 iptables-restore < /etc/iptables_rules.v4
 ip6tables-restore < /etc/iptables_rules.v6
