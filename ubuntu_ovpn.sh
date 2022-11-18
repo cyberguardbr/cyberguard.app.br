@@ -1,10 +1,11 @@
 #!/bin/bash
 cp /usr/share/zoneinfo/Asia/Riyadh /etc/localtime
 #Database Details
-$db_host='66.45.227.43';
-$db_user = "cyberlin_cyber";
-$db_pass = "Cyberlink3005!";
-$db_name = "cyberlin_cyber";
+HOST='66.45.227.43';
+USER='cyberlin_cyber';
+PASS='Cyberlink3005!';
+DBNAME='cyberlin_cyber';
+
 install_require()
 {
   clear
