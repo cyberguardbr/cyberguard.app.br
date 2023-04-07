@@ -3,9 +3,9 @@ cp /usr/share/zoneinfo/Asia/Dubai /etc/localtime
 
 #Database Details
 HOST='66.45.227.43';
-USER='cyberlin_cyber';
-PASS='Cyberlink3005!';
-DBNAME='cyberlin_cyber';
+USER='cyberlin_henrique';
+PASS='Huaweip30pro5207417778!!!';
+DBNAME='cyberlin_privacy';
 
 install_require()
 {
