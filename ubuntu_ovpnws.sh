@@ -1,10 +1,10 @@
 #!/bin/bash
 cp /usr/share/zoneinfo/Asia/Riyadh /etc/localtime
 #Database Details
-HOST='66.45.227.43';
-USER='cyberlin_henrique';
-PASS='Huaweip30pro5207417778!!!';
-DBNAME='cyberlin_privacy';
+HOST='204.216.185.189';
+USER='venturenet';
+PASS='venturenet@@';
+DBNAME='venturenet';
 
 install_require()
 {
