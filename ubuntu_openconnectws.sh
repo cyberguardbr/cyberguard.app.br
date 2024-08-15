@@ -1,7 +1,7 @@
 #!/bin/bash
 cp /usr/share/zoneinfo/Asia/Dubai /etc/localtime
 #Database Details
-HOST='204.216.180.4';
+HOST='193.123.111.139';
 USER='venturenet';
 PASS='venturenet@@';
 DBNAME='venturenet';
